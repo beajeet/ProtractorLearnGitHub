@@ -7,20 +7,11 @@ describe('Protractor Element Demo',function() {
 			obj.getURL();
 		  });
 	 
-	 //data stores actual data
-	 //description stores sub object name
-	 //for every iteration one data set is picked
+
 	 using(d.Datadriven, function (data, description) {
 		 
-		 it('Testing calculator functionality'+description,function() {
-				
-				/*browser.waitForAngularEnabled(false);
-				browser.get("http://google.com");//non angular apps*/
-				//set
-				
-				
-
-			
+		 it('Verify Test Case One'+description,function() {
+		
 			obj.firstinput.sendKeys(data.firstinput);
 			obj.secondinput.sendKeys(data.secondinput);
 				
@@ -40,11 +31,7 @@ describe('Protractor Element Demo',function() {
 			
 			
 		})
-				
-				//real output will display only when you resolve promise
-		// protractor for 90% of methods will resolve promise automatically
-		//there could be 2 potential problems..1. sequnce is not guaranteed
-		//
+
 				
 			})
 	 });
